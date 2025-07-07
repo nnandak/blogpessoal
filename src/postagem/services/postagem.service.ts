@@ -6,6 +6,7 @@ import { Postagem } from '../entities/postagem.entity';
 
 @Injectable()
 export class PostagemService {
+  findByTitulo: any;
   constructor(
     @InjectRepository(Postagem)
     private postagemRepository: Repository<Postagem>,
